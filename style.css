@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --color-very-dark-magenta: hsl(300, 43%, 22%);
+    --color-soft-pink: hsl(333, 80%, 67%);
+}
+
+body {
+    margin:0;
+    font-family: 'Spartan', sans-serif;
+    /* font-size: 15px; */
+}
+
+#container {
+    padding: 4%;
+    margin-top: 7%;
+}
+
+.title {
+    font-size: 2em;
+    color: var(--color-very-dark-magenta);
+    font-weight: 700;
+    text-align: center;
+    line-height: 1em;
+}
+
+.description {
+    font-size: 14px;
+    color: var(--color-very-dark-magenta);
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.8em;
+}
+
+#rates {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+.rate {
+    background-color: hsla(300, 43%, 22%, 0.1);
+    margin: 3%;
+    border-radius: 8px;
+}
+
+.rate__text {
+    font-weight: 700;
+    font-size: .8em;
+    color: var(--color-very-dark-magenta);
+    margin-bottom: 5%;
+}
+
+.estrelas {
+    margin-top: 5%;
+    margin-bottom: -1%;
+}
+
+.estrelas img {
+    margin-left: 2px;
+}
+
+#depoimentos {
+    display: flex;
+    flex-flow: column;
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+
+.col__depoimento {
+    background-color: var(--color-very-dark-magenta);
+    padding: 10%;
+    margin: 3%;
+    border-radius: 8px;
+}
+
+.nome__depoimento {
+    font-weight: 500;
+    color: white;
+    margin-bottom: -11px;
+    font-size: 1.1em;
+}
+
+.verBuy {
+    color: var(--color-soft-pink);
+    font-weight: 400;
+    font-size: .9em;
+    letter-spacing: 1px;
+}
+
+.depoimento {
+    color: white;
+    font-weight: 400;
+    font-size: .77em;
+    line-height: 25px;
+    margin-bottom: -2%;
+}
+
+.col__depoimento img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.perfil{
+    display: flex;
+}
+
+.nomes {
+    margin-left: 9%;
+    font-size: .8em;
+}
+
+@media (min-width:375px) {
+    body {
+        max-width: 1920px;
+        margin: 5% 10% 10% 10%;
+    }
+}
+
+#container {
+    margin: 0;
+    padding: 0;
+}
+
+#chamada {
+    font-size: 90%;
+}
+
+.title{
+    text-align: left;
+    font-size: 4em;
+    padding-right: 40%;
+    margin-bottom: 1%;
+}
+
+.description {
+    text-align: left;
+    padding-right: 45%;
+    font-size: 1.25em;
+    line-height: 1.8em;
+}
+
+#rates { 
+    padding-top: 3%;
+}
+
+.rate {
+    background-color: hsla(300, 43%, 22%, 0.1);
+    display: flex;
+    width: 400px;
+    padding: 1.3em 2em 1em 2em;
+    margin: .6em;
+}
+
+#rates .rate:first-child {
+    transform: translateX(-20%);
+  }
+  #rates .rate:nth-child(2) {
+    transform: translateX(-10%);
+  }
+
+.rate__text {
+    margin: 0 0 0 10%;
+    padding: 0;
+}
+
+.estrelas {
+    margin: 0;
+    padding: 0;
+}
+
+#top__block {
+    display: flex;
+}
+
+#depoimentos {
+    /* margin: 0 -50px 0 -50px; */
+    padding: 0;
+    flex-flow: row;
+    margin-right: -35px;
+    margin-top: 70px;
+}
+
+.col__depoimento {
+    /* width: 500; */
+    height: auto;
+    margin: 0 35px 0 0;
+    padding: 3%;
+}
+
+.depoimento {
+    font-size: 1.1em;
+    line-height: 1.8em;
+}
+
+.nomes {
+    font-size: 1em;
+    margin-left: 30px;
+}
+
+.verBuy {
+    line-height: 1em;
+}
+
+.perfil {
+    align-items: center;
+}
+
+.col__depoimento img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#depoimentos .col__depoimento:nth-child(2) {
+    transform: translateY(5%);
+  }
+  #depoimentos .col__depoimento:last-child {
+    transform: translateY(10%);
+  }
